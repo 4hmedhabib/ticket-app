@@ -13,5 +13,5 @@ export const signupValidator = [
 
 export const signinValidator = [
   body("email").isEmail().withMessage("Email must be verified!."),
-  body("password").trim().notEmpty().withMessage("You must suppy a password."),
+  body("password").trim().notEmpty().withMessage("You must supply a password."),
 ];
