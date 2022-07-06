@@ -10,3 +10,8 @@ export const signupValidator = [
     })
     .withMessage("Password must be between 4 and 20 characters!."),
 ];
+
+export const signinValidator = [
+  body("email").isEmail().withMessage("Email must be verified!."),
+  body("password").trim().notEmpty().withMessage("You must supply a password."),
+];
