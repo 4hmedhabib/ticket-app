@@ -11,7 +11,7 @@ import { signoutRouter } from "./routes/signout";
 import { signupRouters } from "./routes/signup";
 
 //Middleware
-import { errorHandler } from "./middleware/error-handler";
+import { errorHandler } from "./middlewares/error-handler";
 import { NotFoundError } from "./errors/not-found";
 import cookieSession from "cookie-session";
 import jwt from "jsonwebtoken";
