@@ -1,8 +1,9 @@
 import { NextFunction, Request, Response } from "express";
 import { NotAuthorizedError } from "../errors/not-authorized-error";
+import { IUserRequest } from "../interfaces/request";
 
 export const requireAuth = (
-  req: Request,
+  req: IUserRequest,
   res: Response,
   next: NextFunction
 ) => {
